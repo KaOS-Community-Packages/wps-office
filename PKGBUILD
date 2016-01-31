@@ -1,6 +1,7 @@
 pkgname=wps-office
 pkgver=10.1.0.5460_a20p1
-_pkgver=10.1.0.5460~a20p1
+_pkgver=10.1.0.5460
+_pkgrel=~a20p1
 pkgrel=1
 pkgdesc="WPS Office is an office productivity suite"
 arch=('x86_64')
@@ -11,19 +12,19 @@ optdepends=('cups: for printing support'
             'pango: for complex (right-to-left) text support')
 options=('!emptydirs')
 install=${pkgname}.install
-source=("http://kdl.cc.ksosoft.com/wps-community/download/a20/wps-office_${_pkgver}_x86_64.tar.xz")
+source=("http://kdl.cc.ksosoft.com/wps-community/download/a20/wps-office_${_pkgver}${_pkgrel}_x86_64.tar.xz")
 sha512sums=('769fd003522a8654731d86c24b35623a916327018c0ee788448635480beb4fe9c192605668e9d7fdbd4c04de5806fe95a9689cd6e1034d51942cd740fe1795e0')
 
 PKGEXT=".pkg.tar"
 
 prepare() {
-  cd wps-office_${_pkgver}_${arch}
+  cd wps-office_${_pkgver}${_pkgrel}_${arch}
 
   sed -i 's|/opt/kingsoft/wps-office|/usr/lib|' wps wpp et
 }
 
 package() {
-  cd wps-office_${_pkgver}_${arch}
+  cd wps-office_${_pkgver}${_pkgrel}_${arch}
 
   install -d "$pkgdir/usr/lib"
   cp -r office6 "$pkgdir/usr/lib"
