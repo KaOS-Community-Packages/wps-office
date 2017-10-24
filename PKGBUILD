@@ -1,6 +1,6 @@
 pkgname=wps-office
-pkgver=10.1.0.5672_a21
-_pkgver=10.1.0.5672~a21
+pkgver=10.1.0.5707_a21
+_pkgver=10.1.0.5707~a21
 pkgrel=1
 pkgdesc="WPS Office is an office productivity suite"
 arch=('x86_64')
@@ -12,7 +12,7 @@ optdepends=('cups: for printing support'
 options=('!emptydirs')
 install=${pkgname}.install
 source=("http://kdl.cc.ksosoft.com/wps-community/download/a21/wps-office_${_pkgver}_x86_64.tar.xz")
-sha512sums=('6b781d8b4db0173fb896e05508dd986ffb7d7c5e4ab452738b487d79588604b4a98f3616e0c775a1fd21ed20b6fbfbc9f81b1868c3cbfd34e770dfde8544c0c0')
+sha256sums=('aa875a06e7eef79a30d6e5a4bd03f08eeb1524013edd59122d95a20b1638d9c5')
 
 PKGEXT=".pkg.tar"
 
