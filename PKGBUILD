@@ -13,7 +13,6 @@ conflicts=('kingsoft-office')
 options=('!emptydirs')
 install=${pkgname}.install
 [[ "$CARCH" = "" ]] && _archext=x86 || _archext=x86_64
-source_i686=("http://kdl1.cache.wps.com/ksodl/download/linux/a21/wps-office_${_pkgver}_x86.tar.xz")
 source_x86_64=("http://kdl1.cache.wps.com/ksodl/download/linux/a21/wps-office_${_pkgver}_x86_64.tar.xz")
 sha1sums_x86_64=('1970df8c0e6a03649b6809472b89628a685188dc')
 PKGEXT=".pkg.tar"
