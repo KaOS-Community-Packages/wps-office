@@ -11,7 +11,7 @@ optdepends=('cups: for printing support'
             'pango: for complex (right-to-left) text support')
 options=('!emptydirs')
 install=${pkgname}.install
-source=("http://kdl.cc.ksosoft.com/wps-community/download/a21/wps-office_${_pkgver}_x86_64.tar.xz")
+source=("http://kdl1.cache.wps.com/ksodl/download/linux/a21/wps-office_${_pkgver}_x86_64.tar.xz")
 sha256sums=('aa875a06e7eef79a30d6e5a4bd03f08eeb1524013edd59122d95a20b1638d9c5')
 
 PKGEXT=".pkg.tar"
