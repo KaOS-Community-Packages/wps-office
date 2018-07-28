@@ -6,10 +6,6 @@ arch=('x86_64')
 license=("custom")
 url="http://wps-community.org/"
 depends=('fontconfig' 'libxrender' 'desktop-file-utils' 'shared-mime-info' 'xdg-utils' 'glu' 'openssl' 'sdl2' 'pulseaudio' 'hicolor-icon-theme')
-optdepends=('cups: for printing support'
-            'pango: for complex (right-to-left) text support'
-            'curl: An URL retrieval utility and library'
-            'libjpeg-turbo: JPEG image codec support')
 options=('!emptydirs')
 install=${pkgname}.install
 source=("http://kdl.cc.ksosoft.com/wps-community/download/6634/wps-office_${pkgver}_x86_64.tar.xz")
