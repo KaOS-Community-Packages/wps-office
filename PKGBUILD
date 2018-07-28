@@ -5,7 +5,8 @@ pkgdesc="Kingsoft Office (WPS Office) is an office productivity suite"
 arch=('x86_64')
 license=("custom")
 url="http://wps-community.org/"
-depends=('fontconfig' 'libxrender' 'desktop-file-utils' 'shared-mime-info' 'xdg-utils' 'glu' 'openssl' 'sdl2' 'pulseaudio' 'hicolor-icon-theme' 'cups' 'pango' 'curl' 'libjpeg-turbo')
+depends=('fontconfig' 'libxrender' 'desktop-file-utils' 'shared-mime-info' 'xdg-utils' 'glu' 'openssl' 'sdl2'
+         'pulseaudio' 'hicolor-icon-theme' 'cups' 'pango' 'curl' 'libjpeg-turbo')
 options=('!emptydirs')
 install=${pkgname}.install
 source=("http://kdl.cc.ksosoft.com/wps-community/download/6634/wps-office_${pkgver}_x86_64.tar.xz")
