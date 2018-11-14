@@ -35,6 +35,9 @@ package() {
 
     install -d "${pkgdir}/usr/share/icons"
     cp -r resource/icons/* "${pkgdir}/usr/share/icons"
+    
+    install -d "${pkgdir}/usr/share/mime"
+    cp -r resource/mime/* "${pkgdir}/usr/share/mime"
 
     install -d "${pkgdir}/usr/share/fonts/wps-office"
 
