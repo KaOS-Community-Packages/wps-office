@@ -9,7 +9,7 @@ url="http://wps-community.org/"
 depends=('fontconfig' 'xorg-mkfontdir' 'libxrender' 'desktop-file-utils' 'shared-mime-info' 'xdg-utils' 'glu' 'openssl' 'sdl2' 'pulseaudio' 'hicolor-icon-theme')
 
 options=('!emptydirs')
-install=${pkgname}.install
+#install=${pkgname}.install
 
 source=("http://kdl.cc.ksosoft.com/wps-community/download/6757/wps-office_${pkgver}_x86_64.tar.xz")
 sha1sums=('03a781599dfcf001fc3bcf1d49699bd1a44aaceb')
@@ -36,8 +36,8 @@ package() {
     install -d "${pkgdir}/usr/share/icons"
     cp -r resource/icons/* "${pkgdir}/usr/share/icons"
     
-    install -d "${pkgdir}/usr/share/mime"
-    cp -r resource/mime/* "${pkgdir}/usr/share/mime"
+#    install -d "${pkgdir}/usr/share/mime"
+#    cp -r resource/mime/* "${pkgdir}/usr/share/mime"
 
     install -d "${pkgdir}/usr/share/fonts/wps-office"
 
